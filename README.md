@@ -6,26 +6,29 @@
 
 ###### 查看示例
 + 首先必须编译安装 php 时指定 --enable-sockets 参数
-+ 或者进入到 sockets 目录, 使用 phpize 安装
++ 或者下载并解压 php 的源码包, 并进入到 ext/sockets/ 目录, 使用 phpize 安装
   + ```
-     (your php install file)/bin/phpize
+     cd ext/sockets/
+    ```
+  + ```
+     (your php install directory)/bin/phpize
      
       // 不知道安装目录的话可以使用以下命令来查找
       
       whereis phpize
     ```
   + ```
-     make
+      make
     ```
   + ```
-     make install
+      make install
     ```
   + ```
-    echo 'extension=php_sockets.dll' >> (your php.ini directory)/php.ini
+     echo 'extension=php_sockets.dll' >> (your php.ini directory)/php.ini
      
-    //  不知道安装目录可以使用以下命令来查找
+     //  不知道安装目录可以使用以下命令来查找
     
-    whereis php.ini
+     whereis php.ini
     ``` 
 
 + 克隆仓库到本地  
