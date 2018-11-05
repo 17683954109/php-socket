@@ -11,11 +11,11 @@
      cd ext/sockets/
     ```
   + ```
-     (your php install directory)/bin/phpize
+     (your php installed directory)/bin/phpize
      
       // 不知道安装目录的话可以使用以下命令来查找
       
-      whereis phpize
+      whereis php
     ```
   + ```
       make
@@ -24,11 +24,7 @@
       make install
     ```
   + ```
-     echo 'extension=php_sockets.dll' >> (your php.ini directory)/php.ini
-     
-     //  不知道安装目录可以使用以下命令来查找
-    
-     whereis php.ini
+     echo 'extension=php_sockets.dll' >> (your php installed directory)/php.ini
     ``` 
 
 + 克隆仓库到本地  
